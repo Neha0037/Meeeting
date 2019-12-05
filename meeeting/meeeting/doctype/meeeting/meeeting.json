@@ -1,0 +1,153 @@
+{
+ "autoname": "Meeeting.##",
+ "creation": "2019-11-30 14:46:00.059411",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "status",
+  "column_break_3",
+  "date",
+  "from_time",
+  "to_time",
+  "agenda_section_section",
+  "agenda",
+  "attendees_section_section",
+  "attendees",
+  "invitation_section_section",
+  "invitation_message",
+  "send_emails",
+  "minutes_section_section",
+  "minutes"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "To Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Planned\nInvitation Sent\nCancelled\nIn progress",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "agenda_section_section",
+   "fieldtype": "Section Break",
+   "label": "Agenda Section"
+  },
+  {
+   "fieldname": "agenda",
+   "fieldtype": "Table",
+   "label": "Agenda",
+   "options": "Meeeting Agenda"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "attendees_section_section",
+   "fieldtype": "Section Break",
+   "label": "Attendees Section"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table",
+   "label": "Attendees",
+   "options": "Meeeting Attendee",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "minutes_section_section",
+   "fieldtype": "Section Break",
+   "label": "Minutes Section"
+  },
+  {
+   "fieldname": "minutes",
+   "fieldtype": "Table",
+   "label": "Minutes",
+   "options": "Meeeting Minute"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "invitation_section_section",
+   "fieldtype": "Section Break",
+   "label": "Invitation Section"
+  },
+  {
+   "fieldname": "invitation_message",
+   "fieldtype": "Text Editor",
+   "label": "Invitation Message"
+  },
+  {
+   "fieldname": "send_emails",
+   "fieldtype": "Button",
+   "label": "Send Emails"
+  }
+ ],
+ "modified": "2019-12-03 13:28:59.628476",
+ "modified_by": "Administrator",
+ "module": "Meeeting",
+ "name": "Meeeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Meeting Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
