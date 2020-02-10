@@ -1,0 +1,189 @@
+{
+ "creation": "2019-12-31 15:55:41.531983",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "posting_date",
+  "finance_book",
+  "party",
+  "voucher_type",
+  "voucher_no",
+  "against_voucher_type",
+  "against_voucher",
+  "debit",
+  "credit",
+  "net_amount",
+  "paid_amount",
+  "status",
+  "due_date",
+  "age_days",
+  "age_days_1",
+  "project",
+  "account",
+  "party_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "finance_book",
+   "fieldtype": "Data",
+   "label": "Finance Book",
+   "options": "Finance Book",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Link",
+   "label": "Party",
+   "options": "Customer",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Data",
+   "label": "Voucher Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Data",
+   "label": "Voucher No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "against_voucher_type",
+   "fieldtype": "Data",
+   "label": "Against Voucher Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "against_voucher",
+   "fieldtype": "Data",
+   "label": "Against Voucher No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "debit",
+   "fieldtype": "Float",
+   "label": "Debit",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "credit",
+   "fieldtype": "Float",
+   "label": "Credit",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Float",
+   "label": "Net Amount",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Float",
+   "label": "Paid Amount",
+   "read_only": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "age_days",
+   "fieldtype": "Int",
+   "label": "Age Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age_days_1",
+   "fieldtype": "Int",
+   "label": "Age Days 1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "Party_Type",
+   "options": "Supplier\nCustomer"
+  }
+ ],
+ "modified": "2020-01-28 14:37:24.698156",
+ "modified_by": "Administrator",
+ "module": "Meeeting",
+ "name": "ER EMP Expense Detail",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}

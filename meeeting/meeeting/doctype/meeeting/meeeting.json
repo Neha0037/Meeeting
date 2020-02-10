@@ -1,4 +1,5 @@
 {
+ "allow_guest_to_view": 1,
  "autoname": "Meeeting.##",
  "creation": "2019-11-30 14:46:00.059411",
  "doctype": "DocType",
@@ -6,9 +7,13 @@
  "engine": "InnoDB",
  "field_order": [
   "title",
-  "status",
-  "column_break_3",
   "date",
+  "status",
+  "published",
+  "page_name",
+  "route",
+  "column_break_3",
+  "last_date",
   "from_time",
   "to_time",
   "agenda_section_section",
@@ -59,7 +64,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Planned\nInvitation Sent\nCancelled\nIn progress",
+   "options": "Planned\nInvitation Sent\nCancelled\nIn progress\nClosed",
    "reqd": 1
   },
   {
@@ -114,9 +119,36 @@
    "fieldname": "send_emails",
    "fieldtype": "Button",
    "label": "Send Emails"
+  },
+  {
+   "fieldname": "last_date",
+   "fieldtype": "Date",
+   "label": "Last Date"
+  },
+  {
+   "fieldname": "page_name",
+   "fieldtype": "Data",
+   "label": "Page Name",
+   "print_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published",
+   "print_hide": 1
+  },
+  {
+   "default": "/meeeting/",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "print_hide": 1
   }
  ],
- "modified": "2019-12-03 13:28:59.628476",
+ "has_web_view": 1,
+ "is_published_field": "published",
+ "modified": "2020-01-29 16:31:21.704564",
  "modified_by": "Administrator",
  "module": "Meeeting",
  "name": "Meeeting",

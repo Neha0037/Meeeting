@@ -49,7 +49,7 @@ app_license = "MIT"
 # ----------
 
 # automatically create page for each record of this doctype
-# website_generators = ["Web Page"]
+website_generators = ["Meeeting"]
 
 # Installation
 # ------------
@@ -86,6 +86,9 @@ doc_events = {
 	"ToDo" : {
 		"on-update": "meeeting.api.update_minute_status",
 		"on-trash": "meeeting.api.update_minute_status"
+	},
+	"Sales Invoice" : {
+		"on_submit" : "meeeting.api.update_payment_status"
 	}
 }
 

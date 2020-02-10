@@ -1,0 +1,21 @@
+{
+ "add_total_row": 1,
+ "creation": "2019-12-16 21:45:12.113403",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2019-12-21 17:33:24.557470",
+ "modified_by": "Administrator",
+ "module": "Meeeting",
+ "name": "Meeeting_R",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "Select a.name as \"Meeeting:Link/Meeeting:120\",\n        a.date as \"Date:date/Date:120\",\n        a.status as \"Status::120\",\n        a.from_time as \"From Time:date/From Time:100\",\n        a.to_time as \"To Time:date/To Time:100\",\n        b.assigned_to as \"Assigned To:Link/User:100\",\n        b.complete_by as \"Complete By:date/Complete By:100\",\n        b.description as \"Description:Text/:150\"\n    from `tabMeeeting` a join `tabMeeeting Minute` b\n    where b.parent=a.name;\n        ",
+ "ref_doctype": "Meeeting Minute",
+ "report_name": "Meeeting_R",
+ "report_type": "Query Report",
+ "roles": []
+}

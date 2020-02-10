@@ -5,11 +5,19 @@
 from __future__ import unicode_literals
 import frappe
 from frappe import _
-from frappe.model.document import Document
+from frappe.website.website_generator import WebsiteGenerator
+# from frappe.website.website_generator import WebsiteGenerator
 
-class Meeeting(Document):
+class Meeeting(WebsiteGenerator):
+# class Meeeting(WebsiteGenerator):
+# 	website = frappe._dict(
+# 		template = "templates/meeeting.html"
+# 		# condition_field = "published",
+# 		# page_title_field = "page_name"
+# 	)
 		
 	def validate(self):
+		self.page_name = self.name.lower()
 		self.validate_attendees()
 
 	def on_update(self):
